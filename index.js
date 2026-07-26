@@ -5,7 +5,7 @@ const port = 3000;
 
 
 app.get('/', (req, res) => {
-    res.send("This is github action deployment");
+    return res.json({ msg: "This is a github action deployment" });
 });
 
 app.listen(port, () => {
