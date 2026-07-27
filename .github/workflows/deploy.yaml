@@ -17,6 +17,6 @@ jobs:
                username: ubuntu
                key: ${{ secrets.SSH_KEY }}
                script: |
-                   cd /ubuntu/node-github-action
+                   cd /home/ubuntu/node-github-action
                    git pull origin main
-                   docker compose up -d --build 
+                   docker compose up -d --build
